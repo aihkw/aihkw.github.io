@@ -20,13 +20,13 @@ fetch('/api/roexec.json')
                 f.src = '/assets/windows.webp';
             }
             if (e === 'Mac' || e === 'Mac!') {
-                f.src = '/assets/iOS.webp';
+                f.src = '/assets/ios.webp';
             }
             if (e === 'Android' || e === 'Android!') {
                 f.src = '/assets/android.webp';
             }
             if (e === 'iOS' || e === 'iOS!') {
-                f.src = '/assets/iOS.webp';
+                f.src = '/assets/ios.webp';
             }
 
             if (e.slice(-1) === '!') {
