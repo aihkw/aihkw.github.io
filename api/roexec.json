@@ -1,0 +1,102 @@
+[
+    {
+        "name": "ArceusX",
+        "status": "Operational",
+        "desc": "With ArceusX, unleash unparalleled power on the big screen. Elevate your experience with advanced scripting capabilities and superior performance.",
+        "logo": "/assets/arceusx.gif",
+        "platforms": [
+            "Windows", "Android", "iOS"
+        ],
+        "url": "https://spdmteam.com/"
+    },
+    {
+        "name": "Codex",
+        "status": "Operational",
+        "desc": "Supported low-end PCs and let you enjoy the stable and smooth. Unleashes your graphics performance with exclusive graphics technology, supports high frame rate and 4K-quality graphics. New keyboard & mouse plan restores the PC experience for you. Take control in the game with ease.",
+        "logo": "/assets/codex.webp",
+        "platforms": [
+            "Windows!", "Android", "iOS"
+        ],
+        "url": "https://codex.lol/"
+    },
+    {
+        "name": "Wave",
+        "status": "Fixing",
+        "desc": "Experience Wave, the best scripting tool on the big screen and harness the unparalleled power it offers. Dive into the evolution, not just as an observer, but as a participant riding the crest of innovation. With advanced scripting capabilities and superior performance, Wave invites you to immerse yourself fully and ride the wave of the future.",
+        "logo": "/assets/wave.png",
+        "platforms": [
+            "Windows"
+        ],
+        "url": "https://getwave.gg/"
+    },
+    {
+        "name": "Solara",
+        "status": "Down",
+        "desc": "Just another Roblox exploit",
+        "logo": "/assets/solara.webp",
+        "platforms": [
+            "Windows"
+        ],
+        "url": "https://discord.gg/getsolara"
+    },
+    {
+        "name": "Hydrogen",
+        "status": "Down",
+        "desc": "",
+        "logo": "/assets/hydrogen.webp",
+        "platforms": [
+            "Mac", "Android"
+        ],
+        "url": "https://discord.gg/hydrogen"
+    },
+    {
+        "name": "Vega X",
+        "status": "Operational",
+        "desc": "Script Execution Reimagined",
+        "logo": "/assets/vegax.webp",
+        "platforms": [
+            "Windows", "Android"
+        ],
+        "url": "https://www.vegax.gg/"
+    },
+    {
+        "name": "SynapseX",
+        "status": "Discontinued",
+        "desc": "",
+        "logo": "/assets/synapsex.svg",
+        "platforms": [
+            "Windows"
+        ],
+        "url": "https://x.synapse.to/"
+    },
+    {
+        "name": "Krampus",
+        "status": "Discontinued",
+        "desc": "",
+        "logo": "/assets/krampus.webp",
+        "platforms": [
+            "Windows"
+        ],
+        "url": "https://acedia.gg/"
+    },
+    {
+        "name": "Fluxus",
+        "status": "Discontinued",
+        "desc": "",
+        "logo": "/assets/fluxus.png",
+        "platforms": [
+            "Windows", "Android"
+        ],
+        "url": "https://fluxteam.net//"
+    },
+    {
+        "name": "KRNL",
+        "status": "Discontinued",
+        "desc": "",
+        "logo": "/assets/krnl.webp",
+        "platforms": [
+            "Windows"
+        ],
+        "url": "https://krnl.place/"
+    }
+]
