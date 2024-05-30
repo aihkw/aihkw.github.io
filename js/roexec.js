@@ -52,12 +52,26 @@ fetch('/api/roexec.json')
         if (item.status === 'Down') {
             grid.style.borderBottom = '30px inset rgb(242 63 67 / 80%)';
         }
+        let divider = document.createElement('div');
+        divider.classList.add('divider');
+        let last_updated = document.createElement('a');
+        last_updated.innerHTML = `Last updated: ${item.last_updated}`;
+        last_updated.classList.add('last_updated');
+
+        if (item.desc === '' && item.optional != undefined) {
+            let optional = document.createElement('img');
+            optional.src = item.optional;
+            optional.classList.add('optional');
+            grid.appendChild(optional)
+        }
 
         grid.appendChild(title);
         grid.appendChild(logo);
         grid.appendChild(platforms);
         grid.appendChild(desc);
         grid.appendChild(status);
+        grid.appendChild(divider);
+        grid.appendChild(last_updated)
         parent.appendChild(grid);
     })
 })

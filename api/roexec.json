@@ -5,9 +5,10 @@
         "desc": "With ArceusX, unleash unparalleled power on the big screen. Elevate your experience with advanced scripting capabilities and superior performance.",
         "logo": "/assets/arceusx.gif",
         "platforms": [
-            "Windows", "Android", "iOS"
+            "Windows!", "Android", "iOS"
         ],
-        "url": "https://spdmteam.com/"
+        "url": "https://spdmteam.com/",
+        "last_updated": "2024-05-25"
     },
     {
         "name": "Codex",
@@ -15,9 +16,10 @@
         "desc": "Supported low-end PCs and let you enjoy the stable and smooth. Unleashes your graphics performance with exclusive graphics technology, supports high frame rate and 4K-quality graphics. New keyboard & mouse plan restores the PC experience for you. Take control in the game with ease.",
         "logo": "/assets/codex.webp",
         "platforms": [
-            "Windows!", "Android", "iOS"
+            "Windows!", "Android", "iOS!"
         ],
-        "url": "https://codex.lol/"
+        "url": "https://codex.lol/",
+        "last_updated": "2024-05-26"
     },
     {
         "name": "Wave",
@@ -27,7 +29,8 @@
         "platforms": [
             "Windows"
         ],
-        "url": "https://getwave.gg/"
+        "url": "https://getwave.gg/",
+        "last_updated": "2024-04-12"
     },
     {
         "name": "Solara",
@@ -37,7 +40,8 @@
         "platforms": [
             "Windows"
         ],
-        "url": "https://discord.gg/getsolara"
+        "url": "https://discord.gg/getsolara",
+        "last_updated": "2024-05-29"
     },
     {
         "name": "Hydrogen",
@@ -47,7 +51,8 @@
         "platforms": [
             "Mac", "Android"
         ],
-        "url": "https://discord.gg/hydrogen"
+        "url": "https://discord.gg/hydrogen",
+        "last_updated": "2024-05-02"
     },
     {
         "name": "Vega X",
@@ -57,17 +62,19 @@
         "platforms": [
             "Windows", "Android"
         ],
-        "url": "https://www.vegax.gg/"
+        "url": "https://www.vegax.gg/",
+        "last_updated": "2024-05-13"
     },
     {
         "name": "SynapseX",
         "status": "Discontinued",
-        "desc": "",
+        "desc": "SynapseX used to be one of the best selling executor ever. They're now working for Roblox.",
         "logo": "/assets/synapsex.svg",
         "platforms": [
             "Windows"
         ],
-        "url": "https://x.synapse.to/"
+        "url": "https://x.synapse.to/",
+        "last_updated": "2023-10-28"
     },
     {
         "name": "Krampus",
@@ -77,7 +84,9 @@
         "platforms": [
             "Windows"
         ],
-        "url": "https://acedia.gg/"
+        "url": "https://acedia.gg/",
+        "last_updated": "2024-11-05",
+        "optional": "/ss/krampus.png"
     },
     {
         "name": "Fluxus",
@@ -87,7 +96,8 @@
         "platforms": [
             "Windows", "Android"
         ],
-        "url": "https://fluxteam.net//"
+        "url": "https://fluxteam.net/",
+        "last_updated": "2024-03-03"
     },
     {
         "name": "KRNL",

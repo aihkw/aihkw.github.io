@@ -1,0 +1,94 @@
+.grid-container {
+    margin-top: 10px;
+    margin-bottom: 100px;
+  }
+  .grid {
+    display: inline-grid;
+    background-color: rgba(255, 255, 255, .01);
+    border: var(--border-outline);
+    backdrop-filter: blur(2px);
+    width: 400px;
+    height: 400px;
+    border-radius: 20px;
+    border-bottom: #000 30px inset;
+    padding: 10px;
+    padding-bottom: 20px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    min-height: 325px;
+  }
+  .grid .title {
+    position: relative;
+    left: 10px;
+    top: 5px;
+    font-size: 50px;
+  }
+  .grid .platforms {
+    width: 65%;
+    height: 60px;
+    top: 70px;
+    left: 10px;
+    position: absolute;
+  }
+  .grid .platforms img {
+    width: 30px;
+    margin-left: 10px;
+    padding-top: 20px;
+  }
+  .grid .desc {
+    position: absolute;
+    left: 20px;
+    margin-top: 140px;
+    width: 90%;
+  }
+  .grid .logo {
+    display: block;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 10px;
+    right: 10px;
+    float: right;
+    background-color: black;
+    border: var(--border-outline);
+    padding: 10px;
+    border-radius: 20px;
+  }
+  .grid .status {
+    display: block;
+    position: absolute;
+    bottom: -25px;
+    width: 100%;
+    text-align: center;
+  }
+  .grid .divider {
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    margin-top: 375px;
+    background-color: rgba(255, 255, 255, .1);
+  }
+  .grid .last_updated {
+    display: block;
+    position: absolute;
+    left: 20px;
+    top: 390px;
+  }
+  .grid .optional {
+    display: block;
+    position: absolute;
+    width: 80%;
+    top: 135px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .bottomtext {
+    display: block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    text-align: center;
+    margin-bottom: 100px;
+  }
