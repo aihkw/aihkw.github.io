@@ -253,11 +253,9 @@ section a {
         font-size: 4vw;
     }
     .minigrid-container .grid {
-      display: block !important;
       position: relative;
-      transform: translateX(-50%);
-      left: 50% !important;
-      width: 80vw !important;
+      left: 5px !important;
+      width: 40vw !important;
     }
 }   
 
