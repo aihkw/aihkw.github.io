@@ -120,6 +120,7 @@ section * {
 }
 section h1 {
   font-size: 80px;
+  margin-bottom: 30px;
 }
 section h2 {
   margin-top: 30px;
@@ -243,7 +244,7 @@ section a {
     }
     .topnav a {
         padding: 5vw;
-        font-size: 5vw;
+        font-size: 4vw;
     }
     #announce {
         top: 16vw;
@@ -256,6 +257,10 @@ section a {
       position: relative;
       left: 5px !important;
       width: 40vw !important;
+    }
+    .canva {
+      width: 90vw !important;
+      height: 50vw !important;
     }
 }   
 
@@ -379,3 +384,11 @@ ul {
   margin-bottom: 150px;
 }
 
+.canva {
+  position: relative;
+  display: block;
+  width: 45vw;
+  height: 25.3vw;
+  border: solid 1px rgba(255, 255, 255, .2);
+  border-radius: 15px;
+}
