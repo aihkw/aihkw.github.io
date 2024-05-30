@@ -1,0 +1,50 @@
+[
+    {
+        "name": "Python",
+        "exp": "6+ years",
+        "logo": "/assets/python.png",
+        "gradient": "linear-gradient(135deg, rgba(60, 121, 170, .2), rgba(255, 214, 64, .2))"
+    },
+    {
+        "name": "HTML",
+        "exp": "5+ years",
+        "logo": "/assets/html.png",
+        "gradient": "linear-gradient(135deg, rgba(227, 79, 38, .2), rgba(255, 255, 255, .2))"
+    },
+    {
+        "name": "CSS",
+        "exp": "5+ years",
+        "logo": "/assets/css.png",
+        "gradient": "linear-gradient(135deg, rgba(2, 119, 189, .2), rgba(255, 255, 255, .2))"
+    },
+    {
+        "name": "JS",
+        "exp": "5+ years",
+        "logo": "/assets/js.png",
+        "gradient": "linear-gradient(135deg, rgba(247, 224, 24, .2), rgba(255, 255, 255, .2))"
+    },
+    {
+        "name": "LuaU",
+        "exp": "4+ years",
+        "logo": "/assets/luau.png",
+        "gradient": "linear-gradient(135deg, rgba(0, 162, 255, .2), rgba(255, 255, 255, .2))"
+    },
+    {
+        "name": "Arduino",
+        "exp": "2+ years",
+        "logo": "/assets/ino.png",
+        "gradient": "linear-gradient(135deg, rgba(12,157,163,.2), rgba(255, 255, 255, .2))"
+    },
+    {
+        "name": "C++",
+        "exp": "1+ year",
+        "logo": "/assets/cpp.png",
+        "gradient": "linear-gradient(135deg, rgba(101, 154, 210, .2), rgba(0, 68, 130, .2))"
+    },
+    {
+        "name": "C#",
+        "exp": "1+ year",
+        "logo": "/assets/cs.png",
+        "gradient": "linear-gradient(135deg, rgba(161,121,220,.2), rgba(40,0,104,.2))"
+    }
+]

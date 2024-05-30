@@ -1,0 +1,14 @@
+[
+    {
+        "name": "Infinite Yield",
+        "status": "Operational",
+        "desc": "The best script utility",
+        "logo": "/assets/iy.webp",
+        "platforms": [
+            "Windows", "Android", "iOS"
+        ],
+        "url": "https://github.com/EdgeIY/infiniteyield",
+        "last_updated": "2024-05-29",
+        "code": "loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()"
+    }
+]

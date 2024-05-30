@@ -1,0 +1,33 @@
+.minigrid-container {
+    width: 100%;
+    height: auto;
+}
+.minigrid-container .grid {
+    width: 200px;
+    height: 200px;
+    background-color: rgba(255, 255, 255, 0.02);
+    backdrop-filter: blur(2px);
+    border-radius: 15px;
+    border: var(--border-outline);
+    margin-right: 10px;
+    margin-bottom: 10px;
+    display: inline-grid;
+    border-top: 60px black inset;
+}
+.minigrid-container .grid .logo {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.minigrid-container .grid .text {
+    text-align: center;
+    width: 100px;
+    height: 0;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -60px;
+}

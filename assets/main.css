@@ -121,6 +121,11 @@ section * {
 section h1 {
   font-size: 80px;
 }
+section h2 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 40px;
+}
 section a {
   font-size: 20px;
 }
@@ -247,12 +252,6 @@ section a {
         padding: 2vw;
         font-size: 4vw;
     }
-    .grid {
-      width: 83vw !important;
-    }
-    .grid .title {
-      font-size: 11vw !important;
-    }
 }   
 
 ul {
@@ -364,3 +363,14 @@ ul {
 .example-2 .icon-content a[data-social="osu"] ~ .tooltip {
   background-color: #dc98a4;
 }
+
+.bottomtext {
+  display: block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  text-align: center;
+  margin-bottom: 150px;
+}
+

@@ -48,14 +48,14 @@ $.getScript("https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles
           },
           "line_linked": {
             "enable": true,
-            "distance": 50,
+            "distance": 100,
             "color": "#ffffff",
             "opacity": 0.4,
             "width": 1
           },
           "move": {
             "enable": true,
-            "speed": 1,
+            "speed": .3,
             "direction": "none",
             "random": false,
             "straight": false,
