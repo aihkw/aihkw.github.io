@@ -433,3 +433,7 @@ ul {
 iframe, video {
   border-radius: 15px;
 }
+
+.showcase {
+  width: 90vw;
+}
