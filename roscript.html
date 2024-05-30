@@ -22,6 +22,7 @@
     <meta content="Roblox Scripts" property="og:title" />
     <meta content="Check out popular Roblox scripts." property="og:description" />
     <meta content="#ffffff" data-react-helmet="true" name="theme-color" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
       /* desert scheme ported from vim to google prettify */
       pre.prettyprint { display: block; background-color: #080808 }
@@ -61,8 +62,15 @@
     <div class="topnav">
       <a href="/">Home</a>
       <a href="/projects.html">Projects</a>
-      <a href="/roexec.html">Ro-Exec</a>
-      <a class="active">Ro-Script</a>
+      <div class="dropdown active">
+        <button class="dropbtn">Roblox 
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="/roexec.html">Roblox Executors</a>
+          <a href="/roscript.html">Roblox Scripts</a>
+        </div>
+      </div> 
     </div>
 
     <section class="init">
