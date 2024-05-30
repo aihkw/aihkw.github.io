@@ -1,13 +1,14 @@
 .grid-container {
     margin-top: 10px;
     margin-bottom: 100px;
+    display: ruby-text;
   }
   .grid {
     display: inline-grid;
     background-color: rgba(255, 255, 255, .01);
     border: var(--border-outline);
     backdrop-filter: blur(2px);
-    width: 400px;
+    width: 500px;
     height: 257px;
     border-radius: 20px;
     border-bottom: #000 30px inset;
@@ -85,7 +86,7 @@
 
 .codeblock {
   position: absolute;
-  width: 335px;
+  width: 435px;
   left: 10px;
   bottom: 60px;
   border-radius: 5px;
@@ -107,7 +108,7 @@
   cursor: pointer;
 }
 
-@media (max-width: 470px)  { /* Detects if the screen width below n */
+@media (max-width: 580px)  { /* Detects if the screen width below n */
   .grid {
     width: 83vw !important;
   }

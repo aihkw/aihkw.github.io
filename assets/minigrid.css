@@ -1,6 +1,7 @@
 .minigrid-container {
     width: 100%;
     height: auto;
+    display: ruby-text;
 }
 .minigrid-container .grid {
     width: 200px;

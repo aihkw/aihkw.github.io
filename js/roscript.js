@@ -52,6 +52,9 @@ fetch('/api/roscript.json')
         if (item.status === 'Down') {
             grid.style.borderBottom = '30px inset rgb(242 63 67 / 80%)';
         }
+        if (item.status === 'Trusted') {
+            grid.style.borderBottom = '30px inset rgb(35 44 165 / 80%)'
+        }
         let divider = document.createElement('div');
         divider.classList.add('divider');
         let last_updated = document.createElement('a');
