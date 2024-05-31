@@ -46,20 +46,8 @@ spotLight.castShadow = true;
 spotLight.shadow.bias = -0.0001;
 scene.add(spotLight);
 
-function loading_model_message(model) {
-  let loading_model = document.querySelector('.loading_model');
-  let loading_message = document.querySelector('.loading_message');
-  loading_message.innerHTML = `Loading`;
-  loading_model.style.display = 'block';
-}
-function model_loaded() {
-  let loading_model = document.querySelector('.loading_model');
-  loading_model.style.display = 'none';
-}
-
 var mesh;
 var loader = new GLTFLoader().setPath('/3dassets/duck/');
-loading_model_message('duck');
 loader.load('scene.gltf', (gltf) => {
   mesh = gltf.scene;
   mesh.traverse((child) => {
@@ -72,9 +60,6 @@ loader.load('scene.gltf', (gltf) => {
   scene.add(mesh);
 }, (xhr) => {
   let loaded_progress = xhr.loaded / xhr.total * 100;
-  if (loaded_progress === 100) {
-    model_loaded();
-  }
 }, (error) => {
   console.error(error);
 });
@@ -94,7 +79,6 @@ function animate() {
 var select_model = document.querySelector('#select_model');
 select_model.onchange = function (e) {
   let _model_ = document.querySelector('#select_model').value;
-  loading_model_message(_model_);
   scene.remove(mesh);
   loader = new GLTFLoader().setPath(`/3dassets/${_model_}/`);
   loader.load('scene.gltf', (gltf) => {
@@ -120,9 +104,6 @@ select_model.onchange = function (e) {
 
   }, (xhr) => {
     let loaded_progress = xhr.loaded / xhr.total * 100;
-    if (loaded_progress === 100) {
-      model_loaded();
-    }
   }, (error) => {
     console.error(error);
   });
