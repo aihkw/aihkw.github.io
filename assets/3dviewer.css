@@ -1,0 +1,57 @@
+.loading_model * {
+    cursor: wait;
+}
+.loading_model {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    backdrop-filter: blur(5px);
+}
+.loading_model a {
+    border: var(--border-outline);
+    border-radius: 15px;
+    display: block;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    padding: 100px;
+    width: 10vw;
+    font-size: 1.5vw;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.controller {
+    display: none;
+    position: absolute;
+    background-color: black;
+    width: 300px;
+    height: auto;
+    top: 100px;
+    left: 50px;
+    z-index: 999;
+    padding: 15px;
+    border: var(--border-outline);
+    border-radius: 15px;
+}
+.controller * {
+    color: white;
+}
+
+.option, select {
+    background-color: black;
+    width: 100%;
+}
+.option a {
+    display: block;
+    margin-bottom: 5px;
+}
+.option input[type='range'] {
+    accent-color: white;
+    width: 100%;
+    margin-bottom: 5px;
+}

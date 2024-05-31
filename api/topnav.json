@@ -30,6 +30,10 @@
             {
                 "name": "Enter Password",
                 "href": "/fun/enter_password"
+            },
+            {
+                "name": "3D Viewer",
+                "href": "/fun/3dviewer"
             }
         ]
     }
