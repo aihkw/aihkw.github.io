@@ -1,0 +1,36 @@
+[
+    {
+        "name": "Home",
+        "type": "a",
+        "href": "/"
+    },
+    {
+        "name": "Projects",
+        "type": "a",
+        "href": "/projects"
+    },
+    {
+        "name": "Roblox",
+        "type": "div",
+        "es": [
+            {
+                "name": "Roblox Executors",
+                "href": "/roexec"
+            },
+            {
+                "name": "Roblox Scripts",
+                "href": "/roscript"
+            }
+        ]
+    },
+    {
+        "name": "Fun",
+        "type": "div",
+        "es": [
+            {
+                "name": "Enter Password",
+                "href": "/fun/enter_password"
+            }
+        ]
+    }
+]

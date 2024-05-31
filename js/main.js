@@ -1,3 +1,56 @@
+function _topnav() {
+  const topnav = document.querySelector('.topnav');
+  fetch('/api/topnav.json')
+  .then(response => response.json())
+  .then(data => {
+    data.forEach(item => {
+      let _a = window.location.href.split('/');
+      let _b = _a[_a.length-1];
+      let _dir = _b.split('.')[0];
+      let _name = item.name.toLowerCase();
+      let e = document.createElement(item.type);
+      if (item.type === 'a') {
+        e.innerHTML = item.name;
+        if (_name === _dir || _dir === '' && _name === 'home') {
+          e.classList.add('active');
+        } else {
+          if (item.href === '/') {
+            e.href = '/';
+          } else {
+            e.href = `${item.href}.html`;
+          }
+        }
+      } else if (item.type === 'div') {
+        e.classList.add('dropdown')
+        let button = document.createElement('button');
+        button.innerHTML = `${item.name} `;
+        button.classList.add('dropbtn');
+        let i = document.createElement('i');
+        i.classList.add('fa');
+        i.classList.add('fa-caret-down');
+        button.appendChild(i);
+        e.appendChild(button);
+        let dropdown_content = document.createElement('div');
+        dropdown_content.classList.add('dropdown-content');
+        e.appendChild(dropdown_content)
+        item.es.forEach(item2 => {
+          let _c = document.createElement('a');
+          _c.innerHTML = item2.name;
+          _c.href = `${item2.href}.html`;
+          let _d = item2.href.split('/');
+          let _e = _d[_d.length-1];
+          dropdown_content.appendChild(_c);
+          if (_dir === _e) {
+            e.classList.add('active');
+          }
+        })
+      }
+      topnav.appendChild(e);
+    });
+  })
+}
+_topnav();
+
 const element = document.querySelector('.pane');
 const tiltDeg = 15;
 
