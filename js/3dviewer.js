@@ -45,7 +45,7 @@ scene.add(groundMesh);
 var spotLight = new THREE.SpotLight(0xffffff, 3, 100, .2, 1);
 spotLight.position.set(0, 25, 0);
 spotLight.castShadow = true;
-spotLight.shadow.bias = -0.0001;
+spotLight.shadow.bias = -0.0000;
 scene.add(spotLight);
 
 var mesh;
@@ -121,6 +121,12 @@ document.querySelector('#select_model').onchange = function (e) {
     default_object_camera_position = {'x': 4, 'y': 12, 'z': 11};
     default_object_camera_target = {'x': 0, 'y': 5, 'z': 0};
   }
+  if (_model_ === 'wave') {
+    mesh.position.set(0, 2, -.3);
+    mesh.scale.set(.1, .1, .1);
+    default_object_camera_position = {'x': 4, 'y': 8, 'z': 11};
+    default_object_camera_target = {'x': 0, 'y': 1.8, 'z': 0};
+  }
   update_reset();
   scene.add(mesh);
 
@@ -165,6 +171,28 @@ document.querySelector('#spotlight_intensity').oninput = function() {
 document.querySelector('#spotlight_intensity_reset').onclick = function() {
   spotLight.intensity = 3;
   document.querySelector('#spotlight_intensity').value = 30;
+}
+document.querySelector('#spotlight_position_x').oninput = function() {
+  let x = document.querySelector('#spotlight_position_x').value;
+  let z = document.querySelector('#spotlight_position_z').value;
+  spotLight.position.set(x, 25, z);
+}
+document.querySelector('#spotlight_position_x_reset').onclick = function() {
+  document.querySelector('#spotlight_position_x').value = 0;
+  let x = document.querySelector('#spotlight_position_x').value;
+  let z = document.querySelector('#spotlight_position_z').value;
+  spotLight.position.set(x, 25, z);
+}
+document.querySelector('#spotlight_position_z').oninput = function() {
+  let x = document.querySelector('#spotlight_position_x').value;
+  let z = document.querySelector('#spotlight_position_z').value;
+  spotLight.position.set(x, 25, z);
+}
+document.querySelector('#spotlight_position_z_reset').onclick = function() {
+  document.querySelector('#spotlight_position_z').value = 0;
+  let x = document.querySelector('#spotlight_position_x').value;
+  let z = document.querySelector('#spotlight_position_z').value;
+  spotLight.position.set(x, 25, z);
 }
 
 let init = setInterval(()=>{
