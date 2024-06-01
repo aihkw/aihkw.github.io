@@ -15,7 +15,7 @@ renderer.shadowMap.type = THREE.PCFSoftShadowMap;
 document.body.appendChild(renderer.domElement);
 
 const scene = new THREE.Scene();
-
+var keyboard = {};
 var camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 1, 1000);
 var default_object_camera_position = {'x': 4, 'y': 8, 'z': 11};
 var default_object_camera_target = {'x': 0, 'y': 1, 'z': 0}
@@ -42,10 +42,11 @@ var groundMesh = new THREE.Mesh(groundGeometry, groundMaterial);
 groundMesh.castShadow = false;
 groundMesh.receiveShadow = true;
 scene.add(groundMesh);
+
 var spotLight = new THREE.SpotLight(0xffffff, 3, 100, .2, 1);
-spotLight.position.set(0, 25, 0);
+spotLight.position.set(10, 25, 10);
 spotLight.castShadow = true;
-spotLight.shadow.bias = -0.0000;
+spotLight.shadow.bias = -0.0001;
 scene.add(spotLight);
 
 var mesh;
@@ -178,7 +179,7 @@ document.querySelector('#spotlight_position_x').oninput = function() {
   spotLight.position.set(x, 25, z);
 }
 document.querySelector('#spotlight_position_x_reset').onclick = function() {
-  document.querySelector('#spotlight_position_x').value = 0;
+  document.querySelector('#spotlight_position_x').value = 10;
   let x = document.querySelector('#spotlight_position_x').value;
   let z = document.querySelector('#spotlight_position_z').value;
   spotLight.position.set(x, 25, z);
@@ -189,7 +190,7 @@ document.querySelector('#spotlight_position_z').oninput = function() {
   spotLight.position.set(x, 25, z);
 }
 document.querySelector('#spotlight_position_z_reset').onclick = function() {
-  document.querySelector('#spotlight_position_z').value = 0;
+  document.querySelector('#spotlight_position_z').value = 10;
   let x = document.querySelector('#spotlight_position_x').value;
   let z = document.querySelector('#spotlight_position_z').value;
   spotLight.position.set(x, 25, z);
@@ -206,6 +207,13 @@ let init = setInterval(()=>{
         canvas.style.cursor = 'grab';
       })
       document.querySelector('.controller').style.display = 'block';
+      window.addEventListener('keydown', function(event) {
+        keyboard[event.key] = true;
+      });
+      window.addEventListener('keyup', function(event) {
+        keyboard[event.key] = false;
+      });
+    
       clearInterval(init);
   } catch {
     document.querySelector('.controller').style.display = 'none';
@@ -227,5 +235,24 @@ document.addEventListener("keyup", function onEvent(event) {
     document.querySelector('#controls_pan_status').innerHTML = '✖️'
   }
 });
-    
+var cameraPosition = camera.position;
+var cameraRotation = camera.rotation;
+function handleKeyboardInput(delta) {
+  if (keyboard['W']) {
+    cameraPosition.z -= moveSpeed * delta;
+  }
+  if (keyboard['S']) {
+    cameraPosition.z += moveSpeed * delta;
+  }
+  if (keyboard['A']) {
+    cameraRotation.y += rotateSpeed * delta;
+  }
+  if (keyboard['D']) {
+    cameraRotation.y -= rotateSpeed * delta;
+  }
+  camera.position.copy(cameraPosition);
+  camera.rotation.setFromVector3(cameraRotation);
+}
+
+
 animate();
