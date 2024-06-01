@@ -28,7 +28,7 @@ controls.minDistance = 5;
 controls.maxDistance = 20;
 controls.minPolarAngle = 0;
 controls.maxPolarAngle = 1.5;
-controls.autoRotate = false;
+controls.autoRotate = true;
 controls.target = new THREE.Vector3(0, 1, 0);
 controls.update();
 
