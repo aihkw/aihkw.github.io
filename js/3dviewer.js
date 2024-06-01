@@ -28,7 +28,7 @@ controls.minDistance = 5;
 controls.maxDistance = 20;
 controls.minPolarAngle = 0;
 controls.maxPolarAngle = 1.5;
-controls.autoRotate = true;
+controls.autoRotate = false;
 controls.target = new THREE.Vector3(0, 1, 0);
 controls.update();
 
@@ -50,7 +50,7 @@ spotLight.shadow.bias = -0.0001;
 scene.add(spotLight);
 
 var mesh;
-var loader = new GLTFLoader().setPath('/3dassets/duck/');
+var loader = new GLTFLoader().setPath('/3dassets/fumo/');
 loader.load('scene.gltf', (gltf) => {
   mesh = gltf.scene;
   mesh.traverse((child) => {
@@ -59,7 +59,9 @@ loader.load('scene.gltf', (gltf) => {
       child.receiveShadow = true;
   }
 });
-  mesh.position.set(0, .5, 0); // duck
+  mesh.position.set(-1.4, 1.6, .7); // fumo
+  mesh.rotation.set(0, 90, 0);
+  mesh.scale.set(.1, .1, .1);
   scene.add(mesh);
 }, (xhr) => {
   let loaded_progress = xhr.loaded / xhr.total * 100;
@@ -101,14 +103,18 @@ document.querySelector('#select_model').onchange = function (e) {
         child.receiveShadow = true;
       }
     });
-
+  if (_model_ === 'fumo') {
+    mesh.position.set(-1.4, 1.7, .7); // fumo
+    mesh.rotation.set(0, 90, 0);
+    mesh.scale.set(.1, .1, .1);
+  }
   if (_model_ === 'duck') {
     mesh.position.set(0, .5, 0);
     default_object_camera_position = {'x': 4, 'y': 8, 'z': 11};
     default_object_camera_target = {'x': 0, 'y': 1, 'z': 0};
   }
   if (_model_ === 'damaged_helmet') {
-    mesh.position.set(0, 1.5, 0);
+    mesh.position.set(0, 1.6, 0);
     default_object_camera_position = {'x': 4, 'y': 8, 'z': 11};
     default_object_camera_target = {'x': 0, 'y': 1, 'z': 0};
   }
