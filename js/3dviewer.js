@@ -254,5 +254,19 @@ function handleKeyboardInput(delta) {
   camera.rotation.setFromVector3(cameraRotation);
 }
 
+var settings_vis = true;
+var spacing = '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;';
+document.querySelector('#settings').onclick = function () {
+  if (settings_vis) {
+    document.querySelector('.controller').classList.add('controller-hidden');
+    document.querySelector('#settings').innerHTML = `Settings${spacing}>`;
+    document.querySelector('#settings').classList.remove('controller-shown');
+  } else {
+    document.querySelector('.controller').classList.remove('controller-hidden');
+    document.querySelector('#settings').innerHTML = `<`;
+    document.querySelector('#settings').classList.add('controller-shown');
+  }
+  settings_vis = !settings_vis;
+}
 
 animate();
