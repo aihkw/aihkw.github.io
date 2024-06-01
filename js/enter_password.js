@@ -16,6 +16,8 @@ const res = [
     'I dare you repeat bruh',
     '_rr',
 ]
+var hint = false;
+var tries = 0;
 
 input.addEventListener('keypress', function(event) {
     if (event.key === "Enter") {
@@ -33,6 +35,11 @@ input.addEventListener('keypress', function(event) {
             return
         } else if (v != res[count]) {
             label.textContent = res[count];
+            if (!hint && tries > 0) {
+                alert("Hint: listen to what it says")
+                hint = true;
+            }
+            tries++
         }
         if (count === -1) {
             count++;
