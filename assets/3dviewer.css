@@ -59,15 +59,18 @@
     padding: 0;
     border: 0;
     block-size: 20px;
-    width: 70%;
-    float: right
+    width: 190px;
+    float: right;
+    right: 35px;
+    position: absolute;
 }
 .option input[type='range'] {
     accent-color: white;
-    width: 70%;
+    width: 190px;
     float: right;
     bottom: -2px;
     position: relative;
+    right: 20px;
 }
 .option input[type='checkbox'] {
     margin-left: 5px;

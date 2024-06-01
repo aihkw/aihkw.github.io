@@ -16,7 +16,9 @@ document.body.appendChild(renderer.domElement);
 
 const scene = new THREE.Scene();
 
-const camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 1, 1000);
+var camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 1, 1000);
+var default_object_camera_position = {'x': 4, 'y': 8, 'z': 11};
+var default_object_camera_target = {'x': 0, 'y': 1, 'z': 0}
 camera.position.set(4, 8, 11);
 
 const controls = new OrbitControls(camera, renderer.domElement);
@@ -26,7 +28,7 @@ controls.minDistance = 5;
 controls.maxDistance = 20;
 controls.minPolarAngle = 0;
 controls.maxPolarAngle = 1.5;
-controls.autoRotate = false;
+controls.autoRotate = true;
 controls.target = new THREE.Vector3(0, 1, 0);
 controls.update();
 
@@ -75,8 +77,16 @@ function animate() {
   controls.update();
   renderer.render(scene, camera);
 }
+function update_reset() {
+  let p = default_object_camera_position;
+  let q = default_object_camera_target;
+  camera.position.set(p.x, p.y, p.z);
+  controls.target = new THREE.Vector3(q.x, q.y, q.z);
+}
 
+//
 // Events
+//
 document.querySelector('#select_model').onchange = function (e) {
   let _model_ = document.querySelector('#select_model').value;
   scene.remove(mesh);
@@ -93,13 +103,25 @@ document.querySelector('#select_model').onchange = function (e) {
 
   if (_model_ === 'duck') {
     mesh.position.set(0, .5, 0);
+    default_object_camera_position = {'x': 4, 'y': 8, 'z': 11};
+    default_object_camera_target = {'x': 0, 'y': 1, 'z': 0};
   }
   if (_model_ === 'damaged_helmet') {
     mesh.position.set(0, 1.5, 0);
+    default_object_camera_position = {'x': 4, 'y': 8, 'z': 11};
+    default_object_camera_target = {'x': 0, 'y': 1, 'z': 0};
   }
   if (_model_ === 'millennium_falcon') {
     mesh.position.set(0, 1.05, -1);
+    default_object_camera_position = {'x': 4, 'y': 8, 'z': 11};
+    default_object_camera_target = {'x': 0, 'y': 1, 'z': 0};
   }
+  if (_model_ === 'antique_camera') {
+    mesh.position.set(0, 0, 0);
+    default_object_camera_position = {'x': 4, 'y': 12, 'z': 11};
+    default_object_camera_target = {'x': 0, 'y': 5, 'z': 0};
+  }
+  update_reset();
   scene.add(mesh);
 
   }, (xhr) => {
@@ -110,10 +132,9 @@ document.querySelector('#select_model').onchange = function (e) {
 }
 var controls_pan_checked = false;
 document.querySelector('#controls_pan_reset').onclick = function () {
-  controls.target = new THREE.Vector3(0, 1, 0);
-  camera.position.set(4, 8, 11);
+  update_reset();
 }
-var controls_auto_spin = false;
+var controls_auto_spin = true;
 document.querySelector('#controls_auto_spin').onclick = function () {
   controls_auto_spin = !controls_auto_spin;
   controls.autoRotate = controls_auto_spin;
@@ -127,11 +148,23 @@ document.querySelector('#spotlight_color').oninput = function () {
   let hex = parseInt(document.querySelector('#spotlight_color').value.replace(/^#/, ''), 16);
   spotLight.color = new THREE.Color(hex);
 }
+document.querySelector('#spotlight_color_reset').onclick = function () {
+  spotLight.color = new THREE.Color(16777215);
+  document.querySelector('#spotlight_color').value = '#ffffff';
+}
 document.querySelector('#spotlight_angle').oninput = function () {
-  spotLight.angle = document.querySelector('#spotlight_angle').value/100
+  spotLight.angle = document.querySelector('#spotlight_angle').value/100;
+}
+document.querySelector('#spotlight_angle_reset').onclick = function () {
+  spotLight.angle = .2;
+  document.querySelector('#spotlight_angle').value = 20;
 }
 document.querySelector('#spotlight_intensity').oninput = function() {
   spotLight.intensity = document.querySelector('#spotlight_intensity').value/10
+}
+document.querySelector('#spotlight_intensity_reset').onclick = function() {
+  spotLight.intensity = 3;
+  document.querySelector('#spotlight_intensity').value = 30;
 }
 
 let init = setInterval(()=>{
