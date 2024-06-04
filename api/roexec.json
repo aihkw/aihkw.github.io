@@ -7,7 +7,6 @@
         "platforms": [
             "Windows!", "Android", "iOS!"
         ],
-        "url": "https://spdmteam.com/",
         "banner": "/assets/spdmteam.gif",
         "rating": 4.5,
         "unc": 98,
@@ -15,7 +14,11 @@
         "availability": [
             "Free",
             "Premium"
-        ]
+        ],
+        "socials": {
+            "discord": "https://discord.gg/arceus",
+            "web": "https://spdmteam.com/"
+        }
     },
     {
         "name": "Codex",
@@ -25,7 +28,6 @@
         "platforms": [
             "Windows!", "Android", "iOS!"
         ],
-        "url": "https://codex.lol/",
         "banner": "/assets/spdmteam.gif",
         "rating": 4.5,
         "unc": 98,
@@ -33,7 +35,11 @@
         "availability": [
             "Free",
             "Premium"
-        ]
+        ],
+        "socials": {
+            "discord": "https://discord.gg/robloxexploits",
+            "web": "https://codex.lol/"
+        }
     },
     {
         "name": "Wave",
@@ -43,7 +49,7 @@
         "platforms": [
             "Windows", "Mac!"
         ],
-        "url": "https://getwave.gg/",
+        "background": "/assets/wave.gif",
         "banner": "/assets/spdmteam.gif",
         "rating": 5,
         "unc": 99,
@@ -51,7 +57,8 @@
         "availability": [
             "Free",
             "Premium"
-        ]
+        ],
+        "socials": {"discord": "https://discord.gg/getwave", "web": "https://getwave.gg/"}
     },
     {
         "name": "Solara",
@@ -61,45 +68,13 @@
         "platforms": [
             "Windows"
         ],
-        "url": "https://discord.gg/getsolara",
         "rating": 4,
         "unc": 55,
         "last_updated": "2024-06-04",
         "availability": [
             "Free"
-        ]
-    },
-    {
-        "name": "MacSploit",
-        "status": "Operational",
-        "desc": "",
-        "logo": "/assets/macsploit.gif",
-        "platforms": [
-            "Mac"
         ],
-        "url": "https://discord.gg/macsploit",
-        "rating": 5,
-        "unc": "98",
-        "last_updated": "2024-06-02",
-        "availability": [
-            "Paid"
-        ]
-    },
-    {
-        "name": "Hydrogen",
-        "status": "Operational",
-        "desc": "",
-        "logo": "/assets/hydrogen.webp",
-        "platforms": [
-            "Mac!", "Android"
-        ],
-        "url": "https://discord.gg/hydrogen",
-        "rating": 4,
-        "unc": "96",
-        "last_updated": "2024-06-04",
-        "availability": [
-            "Free"
-        ]
+        "socials": {"discord": "https://discord.gg/getsolara"}
     },
     {
         "name": "Vega X",
@@ -109,28 +84,61 @@
         "platforms": [
             "Windows!", "Android"
         ],
-        "url": "https://www.vegax.gg/",
         "rating": 4,
-        "unc": "?",
+        "unc": 96,
         "last_updated": "2024-05-13",
         "availability": [
             "Free"
-        ]
+        ],
+        "socials": {"discord": "https://discord.gg/vegax", "web": "https://www.vegax.gg/"}
     },
     {
         "name": "Aero",
         "status": "Down",
-        "desc": "AeroExec.gg The Best Roblox Injection Tool",
+        "desc": "AeroExec.gg<br>The Best Roblox Injection Tool",
         "logo": "/assets/aero.gif",
         "platforms": [
             "Windows"
         ],
-        "url": "https://discord.gg/aeroexec",
-        "unc": "?",
+        "rating": null,
+        "unc": 70,
         "last_updated": "2024-05-16",
         "availability": [
             "Free"
-        ]
+        ],
+        "socials": {"discord": "https://discord.gg/aeroexec"}
+    },
+    {
+        "name": "MacSploit",
+        "status": "Operational",
+        "desc": "",
+        "logo": "/assets/macsploit.gif",
+        "platforms": [
+            "Mac"
+        ],
+        "rating": 5,
+        "unc": "98",
+        "last_updated": "2024-06-02",
+        "availability": [
+            "Paid"
+        ],
+        "socials": {"discord": "https://discord.gg/macsploit"}
+    },
+    {
+        "name": "Hydrogen",
+        "status": "Operational",
+        "desc": "",
+        "logo": "/assets/hydrogen.webp",
+        "platforms": [
+            "Mac!", "Android"
+        ],
+        "rating": 4,
+        "unc": "96",
+        "last_updated": "2024-06-04",
+        "availability": [
+            "Free"
+        ],
+        "socials": {"discord": "https://discord.gg/hydrogen"}
     },
     {
         "name": "Celery",
@@ -140,13 +148,13 @@
         "platforms": [
             "Windows"
         ],
-        "url": "https://celery.zip/",
         "unc": 0,
         "rating": 3,
         "last_updated": "2024-05-16",
         "availability": [
             "Free"
-        ]
+        ],
+        "socials": {"discord": "https://discord.gg/celery", "web": "https://celery.zip/"}
     },
     {
         "name": "SynapseX",
@@ -156,13 +164,13 @@
         "platforms": [
             "Windows"
         ],
-        "url": "https://x.synapse.to/",
         "unc": 100,
         "rating": 5,
         "last_updated": "2023-10-28",
         "availability": [
             "Paid"
-        ]
+        ],
+        "socials": {"web": "https://x.synapse.to/"}
     },
     {
         "name": "Krampus",
@@ -172,7 +180,6 @@
         "platforms": [
             "Windows"
         ],
-        "url": "https://acedia.gg/",
         "unc": 100,
         "rating": 5,
         "last_updated": "2024-11-05",
@@ -189,7 +196,6 @@
         "platforms": [
             "Windows", "Android"
         ],
-        "url": "https://fluxteam.net/",
         "unc": "?",
         "rating": 4,
         "last_updated": "2024-03-03",
@@ -205,7 +211,6 @@
         "platforms": [
             "Windows"
         ],
-        "url": "https://krnl.place/",
         "unc": "?",
         "rating": 4.5,
         "last_updated": "2023",

@@ -111,6 +111,21 @@
     margin-right: 10px;
     border-radius: 10px;
   }
+  .social-holder {
+    display: block;
+    position: absolute;
+    bottom: 70px;
+    right: 10px;
+    text-align: center;
+  }
+  .social-holder img {
+    display: block;
+    position: relative;
+    float: right;
+    text-align: center;
+    width: 35px;
+    margin-left: 10px;
+  }
   .rating-holder {
     display: block;
     position: absolute;

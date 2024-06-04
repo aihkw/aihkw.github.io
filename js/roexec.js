@@ -7,7 +7,6 @@ fetch('/api/roexec.json')
         grid.classList.add('grid');
         let title = document.createElement('a');
         title.innerHTML = item.name;
-        title.href = item.url
         title.classList.add('title');
         let logo = document.createElement('img');
         logo.src = item.logo
@@ -80,21 +79,45 @@ fetch('/api/roexec.json')
             }
             availability_holder.appendChild(a);
         }
+        let social_holder = document.createElement('div');
+        social_holder.classList.add('social-holder');
+        if (item.socials != undefined) {
+            if (item.socials['discord'] != undefined) {
+                let img = document.createElement('img');
+                img.setAttribute('onclick', `window.open('${item.socials['discord']}')`);
+                img.src = '/assets/discord.png';
+                social_holder.appendChild(img);
+            }
+            if (item.socials['web'] != undefined) {
+                let img = document.createElement('img');
+                img.setAttribute('onclick', `window.open('${item.socials['web']}')`);
+                img.src = '/assets/web.png';
+                social_holder.appendChild(img);
+            }
+        }
+        
         let rating_holder = document.createElement('div');
         rating_holder.classList.add('rating-holder');
         let _star = item.rating;
-        for (let i = 0; i < 5; i++) {
-            let span = document.createElement('span');
-            span.classList.add('fa');
-            span.classList.add('fa-star');
-            if (_star >= 1) {
-                span.classList.add('star-checked')
-            } else if (_star == .5) {
-                span.classList.add('star-half');
+        if (item.rating != undefined) {
+            for (let i = 0; i < 5; i++) {
+                let span = document.createElement('span');
+                span.classList.add('fa');
+                span.classList.add('fa-star');
+                if (_star >= 1) {
+                    span.classList.add('star-checked')
+                } else if (_star == .5) {
+                    span.classList.add('star-half');
+                }
+                _star -= 1;
+                rating_holder.appendChild(span)
             }
-            _star -= 1;
-            rating_holder.appendChild(span)
+        } else {
+            let a = document.createElement('a');
+            a.innerHTML = "No review";
+            rating_holder.appendChild(a);
         }
+        
         let unc = document.createElement('a');
         if (item.unc != "?" && item.unc != undefined) {
             unc.innerHTML = `UNC: ${item.unc}%`;
@@ -132,6 +155,7 @@ fetch('/api/roexec.json')
         grid.appendChild(status);
         grid.appendChild(divider);
         grid.appendChild(availability_holder);
+        grid.appendChild(social_holder);
         grid.appendChild(rating_holder);
         grid.appendChild(unc);
         grid.appendChild(last_updated);
