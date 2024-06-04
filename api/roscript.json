@@ -10,5 +10,17 @@
         "url": "https://github.com/EdgeIY/infiniteyield",
         "last_updated": "2024-05-29",
         "code": "loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()"
+    },
+    {
+        "name": "Thunder Client",
+        "status": "Trusted",
+        "desc": "The best Roblox Arsenal script",
+        "logo": "/assets/thunderclient.webp",
+        "platforms": [
+            "Windows", "Android", "iOS"
+        ],
+        "url": "https://discord.gg/thunderclient",
+        "last_updated": "2024-06-04",
+        "code": "loadstring(game:HttpGet('https://api.luarmor.net/files/v3/loaders/41f7d88bf584cfbb05c0f507eda3a130.lua'))()"
     }
 ]
