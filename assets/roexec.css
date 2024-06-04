@@ -8,7 +8,7 @@
     border: var(--border-outline);
     backdrop-filter: blur(2px);
     width: 385px;
-    height: 400px;
+    height: 460px;
     border-radius: 20px;
     border-bottom: #000 30px inset;
     padding: 10px;
@@ -69,11 +69,25 @@
     margin-top: 375px;
     background-color: rgba(255, 255, 255, .1);
   }
+  .grid .banner {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    overflow: hidden;
+    height: 115px;
+    filter: opacity(0.5);
+  }
   .grid .last_updated {
     display: block;
     position: absolute;
     left: 20px;
     bottom: 15px;
+  }
+  .grid .unc {
+    display: block;
+    position: absolute;
+    left: 20px;
+    bottom: 40px;
   }
   .grid .optional {
     display: block;
@@ -82,6 +96,44 @@
     top: 135px;
     left: 50%;
     transform: translateX(-50%);
+  }
+  .availability-holder {
+    display: block;
+    position: absolute;
+    bottom: 75px;
+    left: 20px;
+    text-align: center;
+  }
+  .availability-holder a {
+    padding: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+  }
+  .rating-holder {
+    display: block;
+    position: absolute;
+    bottom: 9px;
+    right: 9px;
+    text-align: center;
+    padding: 5px;
+    border-radius: 10px;
+    border: var(--border-outline);
+  }
+  .rating-holder span {
+    font-size: 25px;
+  }
+  .fa-star {
+    color: rgba(255, 255, 255, .05);
+  }
+  .star-checked {
+    color: orange;
+  }
+  .star-half {
+    background: linear-gradient(90deg, orange 50%, #000 50%);
+    -webkit-text-fill-color: transparent; 
+    -webkit-background-clip: text; 
   }
 
   @media (max-width: 470px)  { /* Detects if the screen width below n */

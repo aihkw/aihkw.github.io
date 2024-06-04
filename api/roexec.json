@@ -8,7 +8,14 @@
             "Windows!", "Android", "iOS!"
         ],
         "url": "https://spdmteam.com/",
-        "last_updated": "2024-05-25"
+        "banner": "/assets/spdmteam.gif",
+        "rating": 4.5,
+        "unc": 98,
+        "last_updated": "2024-05-25",
+        "availability": [
+            "Free",
+            "Premium"
+        ]
     },
     {
         "name": "Codex",
@@ -19,7 +26,14 @@
             "Windows!", "Android", "iOS!"
         ],
         "url": "https://codex.lol/",
-        "last_updated": "2024-05-26"
+        "banner": "/assets/spdmteam.gif",
+        "rating": 4.5,
+        "unc": 98,
+        "last_updated": "2024-05-26",
+        "availability": [
+            "Free",
+            "Premium"
+        ]
     },
     {
         "name": "Wave",
@@ -30,18 +44,46 @@
             "Windows", "Mac!"
         ],
         "url": "https://getwave.gg/",
-        "last_updated": "2024-04-12"
+        "banner": "/assets/spdmteam.gif",
+        "rating": 5,
+        "unc": 99,
+        "last_updated": "2024-06-04",
+        "availability": [
+            "Free",
+            "Premium"
+        ]
     },
     {
         "name": "Solara",
-        "status": "Down",
+        "status": "Operational",
         "desc": "",
         "logo": "/assets/solara.webp",
         "platforms": [
             "Windows"
         ],
         "url": "https://discord.gg/getsolara",
-        "last_updated": "2024-05-29"
+        "rating": 4,
+        "unc": 55,
+        "last_updated": "2024-06-04",
+        "availability": [
+            "Free"
+        ]
+    },
+    {
+        "name": "MacSploit",
+        "status": "Operational",
+        "desc": "",
+        "logo": "/assets/macsploit.gif",
+        "platforms": [
+            "Mac"
+        ],
+        "url": "https://discord.gg/macsploit",
+        "rating": 5,
+        "unc": "98",
+        "last_updated": "2024-06-02",
+        "availability": [
+            "Paid"
+        ]
     },
     {
         "name": "Hydrogen",
@@ -52,7 +94,12 @@
             "Mac!", "Android"
         ],
         "url": "https://discord.gg/hydrogen",
-        "last_updated": "2024-06-04"
+        "rating": 4,
+        "unc": "96",
+        "last_updated": "2024-06-04",
+        "availability": [
+            "Free"
+        ]
     },
     {
         "name": "Vega X",
@@ -60,10 +107,15 @@
         "desc": "Script Execution Reimagined",
         "logo": "/assets/vegax.webp",
         "platforms": [
-            "Windows", "Android"
+            "Windows!", "Android"
         ],
         "url": "https://www.vegax.gg/",
-        "last_updated": "2024-05-13"
+        "rating": 4,
+        "unc": "?",
+        "last_updated": "2024-05-13",
+        "availability": [
+            "Free"
+        ]
     },
     {
         "name": "Aero",
@@ -74,7 +126,11 @@
             "Windows"
         ],
         "url": "https://discord.gg/aeroexec",
-        "last_updated": "2024-05-16"
+        "unc": "?",
+        "last_updated": "2024-05-16",
+        "availability": [
+            "Free"
+        ]
     },
     {
         "name": "Celery",
@@ -85,7 +141,12 @@
             "Windows"
         ],
         "url": "https://celery.zip/",
-        "last_updated": "2024-05-16"
+        "unc": 0,
+        "rating": 3,
+        "last_updated": "2024-05-16",
+        "availability": [
+            "Free"
+        ]
     },
     {
         "name": "SynapseX",
@@ -96,7 +157,12 @@
             "Windows"
         ],
         "url": "https://x.synapse.to/",
-        "last_updated": "2023-10-28"
+        "unc": 100,
+        "rating": 5,
+        "last_updated": "2023-10-28",
+        "availability": [
+            "Paid"
+        ]
     },
     {
         "name": "Krampus",
@@ -107,8 +173,13 @@
             "Windows"
         ],
         "url": "https://acedia.gg/",
+        "unc": 100,
+        "rating": 5,
         "last_updated": "2024-11-05",
-        "optional": "/ss/krampus.png"
+        "optional": "/ss/krampus.png",
+        "availability": [
+            "Paid"
+        ]
     },
     {
         "name": "Fluxus",
@@ -119,7 +190,12 @@
             "Windows", "Android"
         ],
         "url": "https://fluxteam.net/",
-        "last_updated": "2024-03-03"
+        "unc": "?",
+        "rating": 4,
+        "last_updated": "2024-03-03",
+        "availability": [
+            "Free"
+        ]
     },
     {
         "name": "KRNL",
@@ -129,6 +205,12 @@
         "platforms": [
             "Windows"
         ],
-        "url": "https://krnl.place/"
+        "url": "https://krnl.place/",
+        "unc": "?",
+        "rating": 4.5,
+        "last_updated": "2023",
+        "availability": [
+            "Free"
+        ]
     }
 ]

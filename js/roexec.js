@@ -57,6 +57,57 @@ fetch('/api/roexec.json')
         }
         let divider = document.createElement('div');
         divider.classList.add('divider');
+        if (item.banner != undefined) {
+            let banner = document.createElement('img');
+            banner.src = item.banner
+            banner.classList.add('banner');
+            grid.appendChild(banner);
+        }
+        let availability_holder = document.createElement('div');
+        availability_holder.classList.add('availability-holder');
+        for (let i = 0; i < item.availability.length; i++) {
+            let j = item.availability[i];
+            let a = document.createElement('a')
+            a.innerHTML = j
+            if (j == 'Free') {
+                a.style.background = 'rgb(0, 200, 0)';
+            }
+            if (j == 'Premium') {
+                a.style.backgroundImage = 'linear-gradient(to bottom right, red, yellow)';
+            }
+            if (j == 'Paid') {
+                a.style.backgroundImage = 'linear-gradient(to bottom right, blue, white)';
+            }
+            availability_holder.appendChild(a);
+        }
+        let rating_holder = document.createElement('div');
+        rating_holder.classList.add('rating-holder');
+        let _star = item.rating;
+        for (let i = 0; i < 5; i++) {
+            let span = document.createElement('span');
+            span.classList.add('fa');
+            span.classList.add('fa-star');
+            if (_star >= 1) {
+                span.classList.add('star-checked')
+            } else if (_star == .5) {
+                span.classList.add('star-half');
+            }
+            _star -= 1;
+            rating_holder.appendChild(span)
+        }
+        let unc = document.createElement('a');
+        if (item.unc != "?" && item.unc != undefined) {
+            unc.innerHTML = `UNC: ${item.unc}%`;
+            if (item.unc < 50) {
+                unc.style.color = `rgb(255, ${item.unc*2*2.5}, 0)`
+            } else {
+                unc.style.color = `rgb(${(255-(item.unc*2.5))*2}, 255, 0)`
+            }            
+        } else {
+            unc.innerHTML = "UNC: ?";
+            unc.style.filter = 'brightness(0.2)'
+        }
+        unc.classList.add('unc');
         let last_updated = document.createElement('a');
         last_updated.innerHTML = `Last updated: ${item.last_updated}`;
         last_updated.classList.add('last_updated');
@@ -80,7 +131,10 @@ fetch('/api/roexec.json')
         grid.appendChild(desc);
         grid.appendChild(status);
         grid.appendChild(divider);
-        grid.appendChild(last_updated)
+        grid.appendChild(availability_holder);
+        grid.appendChild(rating_holder);
+        grid.appendChild(unc);
+        grid.appendChild(last_updated);
         parent.appendChild(grid);
     })
 })
