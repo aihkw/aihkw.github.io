@@ -30,7 +30,7 @@ fetch('/api/roexec.json')
             }
 
             if (e.slice(-1) === '!') {
-                f.style.filter = 'brightness(0.1)'
+                f.style.filter = 'brightness(0.2)'
             }
             platforms.appendChild(f);
         });

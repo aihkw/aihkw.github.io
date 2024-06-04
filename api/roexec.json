@@ -66,6 +66,17 @@
         "last_updated": "2024-05-13"
     },
     {
+        "name": "Celery",
+        "status": "Down",
+        "desc": "Script Execution Reimagined",
+        "logo": "/assets/celery.webp",
+        "platforms": [
+            "Windows"
+        ],
+        "url": "https://celery.zip/",
+        "last_updated": "2024-05-16"
+    },
+    {
         "name": "SynapseX",
         "status": "Discontinued",
         "desc": "SynapseX used to be one of the best selling executor ever. They're now working for Roblox.",
