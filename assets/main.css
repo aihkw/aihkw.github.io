@@ -140,7 +140,7 @@ section a {
     left: 50%;
     transform: translateX(-50%);
     top: 90%;
-    z-index: 100;
+    z-index: 1000;
 }
 
 @font-face {

@@ -116,6 +116,40 @@ select {
 }
 
 .controller-hidden {
-    left: -335px !important;
+    left: -335px;
     transition: .5s;
+}
+
+@media (max-width: 470px) {
+    #header {
+        margin-top: 50px;
+    }
+    .controller {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .controller-visibility {
+        top: -1px;
+        left: 50%;
+        transform: translateX(-50%);
+        border: var(--border-outline);
+        border-radius: 10px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        background-color: black;
+        width: 310px;
+    }
+    .controller-visibility::after {
+        content: '\00a0\00a0\00a0\00a0\00a0Open/Close';
+        text-align: center;
+    }
+    .controller-hidden {
+        left: 50%;
+        transform: translateX(-50%);
+        transition: .5s;
+        top: 84.3%;
+    }
+    .controller-hidden * ~.controller-visibility {
+        display: none;
+    }
 }
