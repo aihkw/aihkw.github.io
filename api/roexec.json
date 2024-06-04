@@ -35,7 +35,7 @@
     {
         "name": "Solara",
         "status": "Down",
-        "desc": "Just another Roblox exploit",
+        "desc": "",
         "logo": "/assets/solara.webp",
         "platforms": [
             "Windows"
@@ -66,9 +66,20 @@
         "last_updated": "2024-05-13"
     },
     {
+        "name": "Aero",
+        "status": "Down",
+        "desc": "",
+        "logo": "/assets/celery.webp",
+        "platforms": [
+            "Windows"
+        ],
+        "url": "https://celery.zip/",
+        "last_updated": "2024-05-16"
+    },
+    {
         "name": "Celery",
         "status": "Down",
-        "desc": "Script Execution Reimagined",
+        "desc": "",
         "logo": "/assets/celery.webp",
         "platforms": [
             "Windows"
@@ -90,7 +101,7 @@
     {
         "name": "Krampus",
         "status": "Discontinued",
-        "desc": "",
+        "desc": "-",
         "logo": "/assets/krampus.webp",
         "platforms": [
             "Windows"

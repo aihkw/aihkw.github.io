@@ -61,11 +61,17 @@ fetch('/api/roexec.json')
         last_updated.innerHTML = `Last updated: ${item.last_updated}`;
         last_updated.classList.add('last_updated');
 
-        if (item.desc === '' && item.optional != undefined) {
+        if (item.desc === '-' && item.optional != undefined) {
             let optional = document.createElement('img');
             optional.src = item.optional;
             optional.classList.add('optional');
             grid.appendChild(optional)
+        }
+        if (item.desc === '') {
+            desc.innerHTML = '[Please contact @aihkw to update the description]';
+            desc.style.fontSize = '15px';
+            desc.style.color = '#ffff00';
+            desc.href = 'https://discord.com/users/640556322194063434';
         }
 
         grid.appendChild(title);
