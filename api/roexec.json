@@ -45,11 +45,11 @@
     },
     {
         "name": "Hydrogen",
-        "status": "Down",
+        "status": "Operational",
         "desc": "",
         "logo": "/assets/hydrogen.webp",
         "platforms": [
-            "Mac", "Android"
+            "Mac!", "Android"
         ],
         "url": "https://discord.gg/hydrogen",
         "last_updated": "2024-05-02"
