@@ -27,7 +27,7 @@
         "desc": "Experience Wave, the best scripting tool on the big screen and harness the unparalleled power it offers. Dive into the evolution, not just as an observer, but as a participant riding the crest of innovation. With advanced scripting capabilities and superior performance, Wave invites you to immerse yourself fully and ride the wave of the future.",
         "logo": "/assets/wave.png",
         "platforms": [
-            "Windows"
+            "Windows", "Android!"
         ],
         "url": "https://getwave.gg/",
         "last_updated": "2024-04-12"
