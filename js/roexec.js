@@ -48,11 +48,11 @@ fetch('/api/roexec.json')
         if (item.status === 'Fixing') {
             grid.style.borderBottom = '30px inset rgb(240 178 50 / 80%)';
         }
+        if (item.status === 'In Development') {
+            grid.style.borderBottom = '30px inset rgb(255 165 0 / 80%)';
+        }
         if (item.status === 'Down') {
             grid.style.borderBottom = '30px inset rgb(242 63 67 / 80%)';
-        }
-        if (item.status === 'Trusted') {
-            grid.style.borderBottom = '30px inset rgb(35 44 165 / 80%)'
         }
         let divider = document.createElement('div');
         divider.classList.add('divider');

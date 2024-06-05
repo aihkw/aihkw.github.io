@@ -43,7 +43,7 @@
     },
     {
         "name": "Wave",
-        "status": "Fixing",
+        "status": "In Development",
         "desc": "Experience Wave, the best scripting tool on the big screen and harness the unparalleled power it offers. Dive into the evolution, not just as an observer, but as a participant riding the crest of innovation. With advanced scripting capabilities and superior performance, Wave invites you to immerse yourself fully and ride the wave of the future.",
         "logo": "/assets/wave.png",
         "platforms": [
@@ -93,8 +93,24 @@
         "socials": {"discord": "https://discord.gg/vegax", "web": "https://www.vegax.gg/"}
     },
     {
+        "name": "bunni.lol",
+        "status": "In Development",
+        "desc": "",
+        "logo": "/assets/bunnilol.webp",
+        "platforms": [
+            "Windows"
+        ],
+        "rating": null,
+        "unc": "?",
+        "last_updated": "2024-05-13",
+        "availability": [
+            "Paid"
+        ],
+        "socials": {"discord": "https://discord.gg/bunnilol"}
+    },
+    {
         "name": "Aero",
-        "status": "Down",
+        "status": "In Development",
         "desc": "AeroExec.gg<br>The Best Roblox Injection Tool",
         "logo": "/assets/aero.gif",
         "platforms": [
