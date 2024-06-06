@@ -1,0 +1,86 @@
+.btn-class-name {
+    --color: 180, 255, 100;
+    border-radius: .5em;
+    transition: .3s;
+    background-color: rgba(var(--color), .2);
+    color: rgb(var(--color));
+    fill: rgb(var(--color));
+    font-family: monospace;
+    font-weight: bolder;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    border: 2px solid rgb(var(--color));
+    box-shadow: 0 0 10px rgba(var(--color), .4);
+    outline: none;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    height: 50px;
+}
+  
+.btn-class-name:hover {
+    box-shadow: 0 0 0 5px rgba(var(--color), .5);
+}
+  
+.btn-class-name span {
+    transform: scale(.8);
+    transition: .3s;
+}
+  
+.btn-class-name:active {
+    transition: 0s;
+    box-shadow: 0 0 0 5px rgb(var(--color));
+}
+
+.btn-class-name:disabled {
+    --white: 255, 255, 255;
+    box-shadow: 0 0 10px rgba(var(--white), .4) !important;
+    border: 2px solid rgb(var(--white));
+    background-color: rgba(var(--white), .2);
+    color: rgb(var(--white));
+    fill: rgb(var(--white));
+    cursor: default;
+}
+
+#terminal_output {
+    margin-top: 25px;
+    display: block;
+    position: relative;
+    font-family: monospace;
+    background: rgb(26, 26, 26);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.results-container {
+    display: block;
+    position: relative;
+    margin-top: 25px;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 5px;
+    margin-bottom: 100px;
+}
+.results-container a {
+    background:rgb(26, 26, 26);
+    display: block;
+    width: 100%;
+    padding: 15px;
+    border-bottom: var(--border-outline);
+}
+.results-container a span {
+    position: absolute;
+    display: inline-block;
+    left: 130px;
+}
+
+.results-container a img {
+    position: absolute;
+    display: inline-block;
+    left: 100px;
+    width: 20px;
+}

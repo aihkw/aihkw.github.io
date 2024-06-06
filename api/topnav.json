@@ -24,6 +24,16 @@
         ]
     },
     {
+        "name": "Tools",
+        "type": "div",
+        "es": [
+            {
+                "name": "DNS Speed test",
+                "href": "/tools/dns_speed_test"
+            }
+        ]
+    },
+    {
         "name": "Fun",
         "type": "div",
         "es": [
