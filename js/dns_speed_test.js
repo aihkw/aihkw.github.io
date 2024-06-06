@@ -4,7 +4,7 @@ var count = 0;
 var result = [];
 var final_result = [];
 const start_btn = document.querySelector('#start_btn');
-const terminal_output = document.querySelector('#terminal_output');
+const terminal_output = document.getElementById('terminal_output');
 const results_container = document.querySelector('.results-container');
 fetch('/api/dns_speed_test.json')
 .then(response => response.json())
@@ -21,6 +21,7 @@ async function warm_up() {
 
 //
 async function start_test() {
+    let start = performance.now();
     result = [];
     final_result = [];
     results_container.innerHTML = '';
@@ -40,41 +41,45 @@ async function start_test() {
         } else {
             server.speed = {min: undefined, median: undefined, max: undefined};
         }
-        console.log(server);
         result.push(server);
-        terminal_output.innerHTML = `(${result.length}/${count}) Testing ${server.name}...`;
-    }
-    terminal_output.innerHTML = `(${result.length}/${count}) Done`;
-    for (let i = 0; i < result.length; i++) {
-        final_result.push([result[i].name, result[i].speed.median]);
-    }
-    final_result.sort(function(a, b) {
-        return a[1] - b[1];
-    });
-    final_result.forEach(arr => {
-        let div = document.createElement('div');
-        div.classList.add('result');
-        let ping = document.createElement('a');
-        ping.innerHTML = `${arr[1]}ms`;
-        if (arr[1] < 250) {
-            ping.style.color = `rgb(${arr[1]*2*1}, 255, 0)`;
-        } else {
-            ping.style.color = `rgb(255, ${(255-(arr[1]*1))*2}, 0)`;
+        terminal_output.innerHTML = `(${result.length}/${count}) Analyzing ${server.name}...`;
+        terminal_output.setAttribute('style', `background: linear-gradient(120deg, green ${(result.length/count)*100}%, rgb(26, 26, 26) 0%) !important`)
+
+        results_container.innerHTML = '';
+        for (let i = 0; i < result.length; i++) {
+            final_result.push([result[i].name, result[i].speed.median]);
         }
-        let img = document.createElement('img');
-        try {
-            img.src = `/assets/${arr[0].toLowerCase()}.png`;
-        } catch {
-            img.src = '/assets/placeholder.png';
-        }
-        let dns_name = document.createElement('span');
-        dns_name.innerHTML = arr[0];
-        dns_name.classList.add('dns-name');
-        ping.appendChild(dns_name);
-        ping.appendChild(img);
-        div.appendChild(ping);
-        results_container.appendChild(div)
-    })
+        final_result.sort((a, b) => a[1] - b[1]);
+        final_result.forEach(arr => {
+            let div = document.createElement('div');
+            div.classList.add('result');
+            let dns_name = document.createElement('a');
+            dns_name.innerHTML = arr[0];
+            dns_name.classList.add('dns-name');
+            let ping = document.createElement('span');
+            ping.innerHTML = `${arr[1]}ms`;
+            ping.classList.add('ping');
+            if (arr[1] < 250) {
+                ping.style.color = `rgb(${arr[1]*2*1}, 255, 0)`;
+            } else {
+                ping.style.color = `rgb(255, ${(255-(arr[1]*1))*2}, 0)`;
+            }
+            let img = document.createElement('img');
+            try {
+                img.src = `/assets/${arr[0].toLowerCase()}.png`;
+            } catch {
+                img.src = '/assets/placeholder.png';
+            }
+            
+            dns_name.appendChild(ping);
+            dns_name.appendChild(img);
+            div.appendChild(dns_name);
+            results_container.appendChild(div)
+        })
+        final_result = [];
+    }
+    terminal_output.innerHTML = `(${result.length}/${count}) Finished (${(performance.now()-start)/1000}s)`;
+    terminal_output.removeAttribute('style');
 }
 
 async function measure_dns_speed(url, hostname, serverType = 'post', allowCors = false) {

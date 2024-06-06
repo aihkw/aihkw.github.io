@@ -28,8 +28,12 @@
         "type": "div",
         "es": [
             {
-                "name": "DNS Speed test",
+                "name": "DNS Speed Test",
                 "href": "/tools/dns_speed_test"
+            },
+            {
+                "name": "Fortnite Ping Test",
+                "href": "/tools/fortnite_ping_test"
             }
         ]
     },
