@@ -20,7 +20,7 @@ async function start_test() {
     result = [];
     final_result = [];
     results_container.innerHTML = '';
-    for (const server of fortnite_servers) {
+    Promise.all(fortnite_servers.map(server => {
         let start2 = performance.now();
         ajax(server.url, function() {
             var delay = performance.now()-start2;
@@ -42,8 +42,8 @@ async function start_test() {
                 let ping = document.createElement('span');
                 ping.innerHTML = `${arr[1]}ms`;
                 ping.classList.add('ping');
-                if (arr[1] < 250) {
-                    ping.style.color = `rgb(${arr[1]*2*1}, 255, 0)`;
+                if (arr[1] < 100) {
+                    ping.style.color = `rgb(${arr[1]*2*2.5}, 255, 0)`;
                 } else {
                     ping.style.color = `rgb(255, ${(255-(arr[1]*1))*2}, 0)`;
                 }
@@ -63,8 +63,9 @@ async function start_test() {
             })
             final_result = [];
         });
-    }
+    }));
 }
+
 
 function ajax(a, b, c) {
     c = new XMLHttpRequest;

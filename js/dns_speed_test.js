@@ -15,8 +15,8 @@ fetch('/api/dns_speed_test.json')
 });
 
 async function warm_up() {
-    const warmUpPromises = dns_servers.map(server => Promise.all(test_websites.map(website => measure_dns_speed(server.url, website, server.type, server.allowCors))));
-    await Promise.all(warmUpPromises);
+    const promises = dns_servers.map(server => Promise.all(test_websites.map(website => measure_dns_speed(server.url, website, server.type, server.allowCors))));
+    await Promise.all(promises);
 }
 
 //
@@ -47,7 +47,7 @@ async function start_test() {
 
         results_container.innerHTML = '';
         for (let i = 0; i < result.length; i++) {
-            final_result.push([result[i].name, result[i].speed.median]);
+            final_result.push([result[i].name, result[i].speed.min, result[i].speed.median, result[i].speed.max]);
         }
         final_result.sort((a, b) => a[1] - b[1]);
         final_result.forEach(arr => {
@@ -57,10 +57,10 @@ async function start_test() {
             dns_name.innerHTML = arr[0];
             dns_name.classList.add('dns-name');
             let ping = document.createElement('span');
-            ping.innerHTML = `${arr[1]}ms`;
+            ping.innerHTML = `${arr[1]}ms<span>,</span> ${arr[2]}ms<span>,</span> ${arr[3]}ms`;
             ping.classList.add('ping');
-            if (arr[1] < 250) {
-                ping.style.color = `rgb(${arr[1]*2*1}, 255, 0)`;
+            if (arr[1] < 100) {
+                ping.style.color = `rgb(${arr[1]*2*2.5}, 255, 0)`;
             } else {
                 ping.style.color = `rgb(255, ${(255-(arr[1]*1))*2}, 0)`;
             }
