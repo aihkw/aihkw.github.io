@@ -23,6 +23,11 @@ fetch('/api/roexec.json')
         let logo = document.createElement('img');
         logo.src = item.logo
         logo.classList.add('logo');
+        if (item.transparent) {
+            logo.style.height = '80px';
+            logo.style.width = '80px';
+            logo.style.padding = '10px';
+        }
         let platforms = document.createElement('div');
         platforms.classList.add('platforms');
         item.platforms.forEach(e => {
@@ -68,12 +73,13 @@ fetch('/api/roexec.json')
         }
         let divider = document.createElement('div');
         divider.classList.add('divider');
+        /*
         if (item.banner != undefined) {
             let banner = document.createElement('img');
             banner.src = item.banner
             banner.classList.add('banner');
             grid.appendChild(banner);
-        }
+        }*/
         let availability_holder = document.createElement('div');
         availability_holder.classList.add('availability-holder');
         for (let i = 0; i < item.availability.length; i++) {

@@ -4,7 +4,7 @@
   }
   .grid {
     display: inline-grid;
-    background-color: rgba(255, 255, 255, .01);
+    background-color: rgba(255, 255, 255, .03);
     border: var(--border-outline);
     backdrop-filter: blur(2px);
     width: 385px;
@@ -50,9 +50,8 @@
     top: 10px;
     right: 10px;
     float: right;
-    background-color: black;
+    background-color: transparent;
     border: var(--border-outline);
-    padding: 10px;
     border-radius: 20px;
   }
   .grid .status {

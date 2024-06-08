@@ -61,7 +61,8 @@
             "Premium"
         ],
         "socials": {"discord": "https://discord.gg/getwave", "web": "https://getwave.gg/"},
-        "glow": "linear-gradient(135deg, var(--blue-5) 45%, var(--blue-5))"
+        "glow": "linear-gradient(135deg, var(--blue-5) 45%, var(--blue-5))",
+        "transparent": true
     },
     {
         "name": "Solara",
@@ -110,13 +111,14 @@
         "availability": [
             "Paid"
         ],
-        "socials": {"discord": "https://discord.gg/bunnilol"}
+        "socials": {"discord": "https://discord.gg/bunnilol"},
+        "transparent": true
     },
     {
         "name": "Aero",
         "status": "In Development",
         "desc": "AeroExec.gg<br>The Best Roblox Injection Tool",
-        "logo": "/assets/aero.gif",
+        "logo": "/assets/aero.webp",
         "platforms": [
             "Windows"
         ],
