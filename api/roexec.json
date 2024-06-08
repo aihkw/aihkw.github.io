@@ -18,7 +18,8 @@
         "socials": {
             "discord": "https://discord.gg/arceus",
             "web": "https://spdmteam.com/"
-        }
+        },
+        "glow": "linear-gradient(135deg, var(--blue-5) 45%, var(--blue-5))"
     },
     {
         "name": "Codex",
@@ -39,7 +40,8 @@
         "socials": {
             "discord": "https://discord.gg/robloxexploits",
             "web": "https://codex.lol/"
-        }
+        },
+        "glow": "linear-gradient(135deg, var(--red-5) 45%, var(--red-5))"
     },
     {
         "name": "Wave",
@@ -58,7 +60,8 @@
             "Free",
             "Premium"
         ],
-        "socials": {"discord": "https://discord.gg/getwave", "web": "https://getwave.gg/"}
+        "socials": {"discord": "https://discord.gg/getwave", "web": "https://getwave.gg/"},
+        "glow": "linear-gradient(135deg, var(--blue-5) 45%, var(--blue-5))"
     },
     {
         "name": "Solara",
@@ -74,7 +77,8 @@
         "availability": [
             "Free"
         ],
-        "socials": {"discord": "https://discord.gg/getsolara"}
+        "socials": {"discord": "https://discord.gg/getsolara"},
+        "glow": "linear-gradient(135deg, var(--blue-5), var(--violet-8))"
     },
     {
         "name": "Vega X",

@@ -5,6 +5,18 @@ fetch('/api/roexec.json')
     data.forEach(item => {
         let grid = document.createElement('div');
         grid.classList.add('grid');
+        let glow = document.createElement('div');
+        if (item.glow) {
+            glow.classList.add('glow');
+            glow.style.background = item.glow;
+            grid.appendChild(glow);
+            grid.addEventListener('mouseenter', function (a, b) {
+                glow.style.height = '200px';
+            })
+            grid.addEventListener('mouseleave', function (a, b) {
+                glow.style.height = '';
+            })
+        }
         let title = document.createElement('a');
         title.innerHTML = item.name;
         title.classList.add('title');
