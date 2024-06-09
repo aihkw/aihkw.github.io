@@ -103,3 +103,13 @@
     display: inline-block;
     left: 250px;
 }
+
+.stop {
+    --red: 255, 100, 100;
+    background-color: rgba(var(--red), .2);
+    box-shadow: 0 0 10px rgba(var(--red), .4) !important;
+    border: 2px solid rgb(var(--red));
+    background-color: rgba(var(--red), .2);
+    color: rgb(var(--red));
+    fill: rgb(var(--red));
+}
