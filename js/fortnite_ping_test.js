@@ -101,6 +101,7 @@ start_btn.addEventListener('click', async function () {
     } else {
         start_btn.classList.remove('stop');
         running = false;
+        terminal_output.innerHTML = 'Stopped'
         start_btn.innerHTML = 'Run test'
     }
     
