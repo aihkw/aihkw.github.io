@@ -146,7 +146,8 @@
   }
   .star-half {
     background: linear-gradient(90deg, orange 50%, #000 50%);
-    -webkit-text-fill-color: transparent; 
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
     -webkit-background-clip: text; 
   }
 

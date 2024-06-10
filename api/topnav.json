@@ -50,5 +50,10 @@
                 "href": "/fun/3dviewer"
             }
         ]
+    },
+    {
+        "name": "Games",
+        "type": "a",
+        "href": "/games"
     }
 ]

@@ -4355,9 +4355,9 @@ var uniqueId = $.fn.extend( {
 /* eslint-enable max-len */
 //>>docs: https://api.jqueryui.com/accordion/
 //>>demos: https://jqueryui.com/accordion/
-//>>css.structure: ../../themes/base/core.css
-//>>css.structure: ../../themes/base/accordion.css
-//>>css.theme: ../../themes/base/theme.css
+//>>css.structure: /3djs//3djs/themes/base/core.css
+//>>css.structure: /3djs//3djs/themes/base/accordion.css
+//>>css.theme: /3djs//3djs/themes/base/theme.css
 
 
 var widgetsAccordion = $.widget( "ui.accordion", {
@@ -4985,9 +4985,9 @@ var safeActiveElement = $.ui.safeActiveElement = function( document ) {
 //>>description: Creates nestable menus.
 //>>docs: https://api.jqueryui.com/menu/
 //>>demos: https://jqueryui.com/menu/
-//>>css.structure: ../../themes/base/core.css
-//>>css.structure: ../../themes/base/menu.css
-//>>css.theme: ../../themes/base/theme.css
+//>>css.structure: /3djs//3djs/themes/base/core.css
+//>>css.structure: /3djs//3djs/themes/base/menu.css
+//>>css.theme: /3djs//3djs/themes/base/theme.css
 
 
 var widgetsMenu = $.widget( "ui.menu", {
@@ -5676,9 +5676,9 @@ var widgetsMenu = $.widget( "ui.menu", {
 //>>description: Lists suggested words as the user is typing.
 //>>docs: https://api.jqueryui.com/autocomplete/
 //>>demos: https://jqueryui.com/autocomplete/
-//>>css.structure: ../../themes/base/core.css
-//>>css.structure: ../../themes/base/autocomplete.css
-//>>css.theme: ../../themes/base/theme.css
+//>>css.structure: /3djs//3djs/themes/base/core.css
+//>>css.structure: /3djs//3djs/themes/base/autocomplete.css
+//>>css.theme: /3djs//3djs/themes/base/theme.css
 
 
 $.widget( "ui.autocomplete", {
@@ -6332,9 +6332,9 @@ var widgetsAutocomplete = $.ui.autocomplete;
 //>>description: Visually groups form control widgets
 //>>docs: https://api.jqueryui.com/controlgroup/
 //>>demos: https://jqueryui.com/controlgroup/
-//>>css.structure: ../../themes/base/core.css
-//>>css.structure: ../../themes/base/controlgroup.css
-//>>css.theme: ../../themes/base/theme.css
+//>>css.structure: /3djs//3djs/themes/base/core.css
+//>>css.structure: /3djs//3djs/themes/base/controlgroup.css
+//>>css.theme: /3djs//3djs/themes/base/theme.css
 
 
 var controlgroupCornerRegex = /ui-corner-([a-z]){2,6}/g;
@@ -6617,10 +6617,10 @@ var widgetsControlgroup = $.widget( "ui.controlgroup", {
 //>>description: Enhances a form with multiple themeable checkboxes or radio buttons.
 //>>docs: https://api.jqueryui.com/checkboxradio/
 //>>demos: https://jqueryui.com/checkboxradio/
-//>>css.structure: ../../themes/base/core.css
-//>>css.structure: ../../themes/base/button.css
-//>>css.structure: ../../themes/base/checkboxradio.css
-//>>css.theme: ../../themes/base/theme.css
+//>>css.structure: /3djs//3djs/themes/base/core.css
+//>>css.structure: /3djs//3djs/themes/base/button.css
+//>>css.structure: /3djs//3djs/themes/base/checkboxradio.css
+//>>css.theme: /3djs//3djs/themes/base/theme.css
 
 
 $.widget( "ui.checkboxradio", [ $.ui.formResetMixin, {
@@ -6888,9 +6888,9 @@ var widgetsCheckboxradio = $.ui.checkboxradio;
 //>>description: Enhances a form with themeable buttons.
 //>>docs: https://api.jqueryui.com/button/
 //>>demos: https://jqueryui.com/button/
-//>>css.structure: ../../themes/base/core.css
-//>>css.structure: ../../themes/base/button.css
-//>>css.theme: ../../themes/base/theme.css
+//>>css.structure: /3djs//3djs/themes/base/core.css
+//>>css.structure: /3djs//3djs/themes/base/button.css
+//>>css.theme: /3djs//3djs/themes/base/theme.css
 
 
 $.widget( "ui.button", {
@@ -7314,9 +7314,9 @@ var widgetsButton = $.ui.button;
 //>>description: Displays a calendar from an input or inline for selecting dates.
 //>>docs: https://api.jqueryui.com/datepicker/
 //>>demos: https://jqueryui.com/datepicker/
-//>>css.structure: ../../themes/base/core.css
-//>>css.structure: ../../themes/base/datepicker.css
-//>>css.theme: ../../themes/base/theme.css
+//>>css.structure: /3djs//3djs/themes/base/core.css
+//>>css.structure: /3djs//3djs/themes/base/datepicker.css
+//>>css.theme: /3djs//3djs/themes/base/theme.css
 
 
 $.extend( $.ui, { datepicker: { version: "1.13.3" } } );
@@ -9801,7 +9801,7 @@ var safeBlur = $.ui.safeBlur = function( element ) {
 //>>description: Enables dragging functionality for any element.
 //>>docs: https://api.jqueryui.com/draggable/
 //>>demos: https://jqueryui.com/draggable/
-//>>css.structure: ../../themes/base/draggable.css
+//>>css.structure: /3djs//3djs/themes/base/draggable.css
 
 
 $.widget( "ui.draggable", $.ui.mouse, {
@@ -11036,9 +11036,9 @@ var widgetsDraggable = $.ui.draggable;
 //>>description: Enables resize functionality for any element.
 //>>docs: https://api.jqueryui.com/resizable/
 //>>demos: https://jqueryui.com/resizable/
-//>>css.structure: ../../themes/base/core.css
-//>>css.structure: ../../themes/base/resizable.css
-//>>css.theme: ../../themes/base/theme.css
+//>>css.structure: /3djs//3djs/themes/base/core.css
+//>>css.structure: /3djs//3djs/themes/base/resizable.css
+//>>css.theme: /3djs//3djs/themes/base/theme.css
 
 
 $.widget( "ui.resizable", $.ui.mouse, {
@@ -12237,9 +12237,9 @@ var widgetsResizable = $.ui.resizable;
 //>>description: Displays customizable dialog windows.
 //>>docs: https://api.jqueryui.com/dialog/
 //>>demos: https://jqueryui.com/dialog/
-//>>css.structure: ../../themes/base/core.css
-//>>css.structure: ../../themes/base/dialog.css
-//>>css.theme: ../../themes/base/theme.css
+//>>css.structure: /3djs//3djs/themes/base/core.css
+//>>css.structure: /3djs//3djs/themes/base/dialog.css
+//>>css.theme: /3djs//3djs/themes/base/theme.css
 
 
 $.widget( "ui.dialog", {
@@ -13650,9 +13650,9 @@ var widgetsDroppable = $.ui.droppable;
 /* eslint-enable max-len */
 //>>docs: https://api.jqueryui.com/progressbar/
 //>>demos: https://jqueryui.com/progressbar/
-//>>css.structure: ../../themes/base/core.css
-//>>css.structure: ../../themes/base/progressbar.css
-//>>css.theme: ../../themes/base/theme.css
+//>>css.structure: /3djs//3djs/themes/base/core.css
+//>>css.structure: /3djs//3djs/themes/base/progressbar.css
+//>>css.theme: /3djs//3djs/themes/base/theme.css
 
 
 var widgetsProgressbar = $.widget( "ui.progressbar", {
@@ -13811,7 +13811,7 @@ var widgetsProgressbar = $.widget( "ui.progressbar", {
 //>>description: Allows groups of elements to be selected with the mouse.
 //>>docs: https://api.jqueryui.com/selectable/
 //>>demos: https://jqueryui.com/selectable/
-//>>css.structure: ../../themes/base/selectable.css
+//>>css.structure: /3djs//3djs/themes/base/selectable.css
 
 
 var widgetsSelectable = $.widget( "ui.selectable", $.ui.mouse, {
@@ -14111,9 +14111,9 @@ var widgetsSelectable = $.widget( "ui.selectable", $.ui.mouse, {
 /* eslint-enable max-len */
 //>>docs: https://api.jqueryui.com/selectmenu/
 //>>demos: https://jqueryui.com/selectmenu/
-//>>css.structure: ../../themes/base/core.css
-//>>css.structure: ../../themes/base/selectmenu.css, ../../themes/base/button.css
-//>>css.theme: ../../themes/base/theme.css
+//>>css.structure: /3djs//3djs/themes/base/core.css
+//>>css.structure: /3djs//3djs/themes/base/selectmenu.css, /3djs//3djs/themes/base/button.css
+//>>css.theme: /3djs//3djs/themes/base/theme.css
 
 
 var widgetsSelectmenu = $.widget( "ui.selectmenu", [ $.ui.formResetMixin, {
@@ -14780,9 +14780,9 @@ var widgetsSelectmenu = $.widget( "ui.selectmenu", [ $.ui.formResetMixin, {
 //>>description: Displays a flexible slider with ranges and accessibility via keyboard.
 //>>docs: https://api.jqueryui.com/slider/
 //>>demos: https://jqueryui.com/slider/
-//>>css.structure: ../../themes/base/core.css
-//>>css.structure: ../../themes/base/slider.css
-//>>css.theme: ../../themes/base/theme.css
+//>>css.structure: /3djs//3djs/themes/base/core.css
+//>>css.structure: /3djs//3djs/themes/base/slider.css
+//>>css.theme: /3djs//3djs/themes/base/theme.css
 
 
 var widgetsSlider = $.widget( "ui.slider", $.ui.mouse, {
@@ -15515,7 +15515,7 @@ var widgetsSlider = $.widget( "ui.slider", $.ui.mouse, {
 //>>description: Enables items in a list to be sorted using the mouse.
 //>>docs: https://api.jqueryui.com/sortable/
 //>>demos: https://jqueryui.com/sortable/
-//>>css.structure: ../../themes/base/sortable.css
+//>>css.structure: /3djs//3djs/themes/base/sortable.css
 
 
 var widgetsSortable = $.widget( "ui.sortable", $.ui.mouse, {
@@ -17108,9 +17108,9 @@ var widgetsSortable = $.widget( "ui.sortable", $.ui.mouse, {
 //>>description: Displays buttons to easily input numbers via the keyboard or mouse.
 //>>docs: https://api.jqueryui.com/spinner/
 //>>demos: https://jqueryui.com/spinner/
-//>>css.structure: ../../themes/base/core.css
-//>>css.structure: ../../themes/base/spinner.css
-//>>css.theme: ../../themes/base/theme.css
+//>>css.structure: /3djs//3djs/themes/base/core.css
+//>>css.structure: /3djs//3djs/themes/base/spinner.css
+//>>css.theme: /3djs//3djs/themes/base/theme.css
 
 
 function spinnerModifier( fn ) {
@@ -17669,9 +17669,9 @@ var widgetsSpinner = $.ui.spinner;
 //>>description: Transforms a set of container elements into a tab structure.
 //>>docs: https://api.jqueryui.com/tabs/
 //>>demos: https://jqueryui.com/tabs/
-//>>css.structure: ../../themes/base/core.css
-//>>css.structure: ../../themes/base/tabs.css
-//>>css.theme: ../../themes/base/theme.css
+//>>css.structure: /3djs//3djs/themes/base/core.css
+//>>css.structure: /3djs//3djs/themes/base/tabs.css
+//>>css.theme: /3djs//3djs/themes/base/theme.css
 
 
 $.widget( "ui.tabs", {
@@ -18573,9 +18573,9 @@ var widgetsTabs = $.ui.tabs;
 //>>description: Shows additional information for any element on hover or focus.
 //>>docs: https://api.jqueryui.com/tooltip/
 //>>demos: https://jqueryui.com/tooltip/
-//>>css.structure: ../../themes/base/core.css
-//>>css.structure: ../../themes/base/tooltip.css
-//>>css.theme: ../../themes/base/theme.css
+//>>css.structure: /3djs//3djs/themes/base/core.css
+//>>css.structure: /3djs//3djs/themes/base/tooltip.css
+//>>css.theme: /3djs//3djs/themes/base/theme.css
 
 
 $.widget( "ui.tooltip", {

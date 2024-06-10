@@ -1,0 +1,138 @@
+.grid-container {
+    margin-top: 10px;
+    margin-bottom: 100px;
+  }
+  .grid {
+    display: inline-grid;
+    background-color: rgba(255, 255, 255, .03);
+    border: var(--border-outline);
+    backdrop-filter: blur(2px);
+    width: 250px;
+    height: 250px;
+    border-radius: 20px;
+    border-bottom: rgb(0 0 0) 100px inset;
+    padding: 10px;
+    padding-bottom: 20px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+  }
+  .grid .title {
+    position: relative;
+    padding: 5px;
+    margin-top: 275px;
+    font-size: 25px;
+  }
+  .grid .platforms {
+    width: 65%;
+    height: 60px;
+    top: 70px;
+    left: 10px;
+    position: absolute;
+  }
+  .grid .platforms img {
+    width: 30px;
+    margin-left: 10px;
+    padding-top: 20px;
+  }
+  .grid .desc {
+    position: absolute;
+    left: 20px;
+    margin-top: 140px;
+    width: 90%;
+  }
+  .grid .logo {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    float: left;
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    background-size: contain;
+  }
+  .grid .status {
+    display: block;
+    position: absolute;
+    bottom: -27px;
+    width: 100%;
+    text-align: center;
+  }
+  .grid .divider {
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    margin-top: 375px;
+    background-color: rgba(255, 255, 255, .1);
+  }
+  .grid .banner {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    overflow: hidden;
+    height: 115px;
+    filter: opacity(0.5);
+  }
+  .grid .last_updated {
+    display: block;
+    position: absolute;
+    left: 20px;
+    bottom: 15px;
+  }
+  .grid .unc {
+    display: block;
+    position: absolute;
+    left: 20px;
+    bottom: 40px;
+  }
+  .grid .optional {
+    display: block;
+    position: absolute;
+    width: 80%;
+    top: 135px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .availability-holder {
+    display: block;
+    position: absolute;
+    bottom: 75px;
+    left: 20px;
+    text-align: center;
+  }
+  .availability-holder a {
+    padding: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+  }
+  .social-holder {
+    display: block;
+    position: absolute;
+    bottom: 70px;
+    right: 10px;
+    text-align: center;
+  }
+  .social-holder img {
+    display: block;
+    position: relative;
+    float: right;
+    text-align: center;
+    width: 35px;
+    margin-left: 10px;
+  }
+
+  @media (max-width: 470px)  { /* Detects if the screen width below n */
+    .grid {
+      width: 83vw !important;
+    }
+    .grid .title {
+      font-size: 8vw !important;
+    }
+}   

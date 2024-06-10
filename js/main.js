@@ -17,7 +17,11 @@ function _topnav() {
           if (item.href === '/') {
             e.href = '/';
           } else {
-            e.href = `${item.href}.html`;
+            if (window.location.hostname == '127.0.0.1') {
+              e.href = `${item.href}.html`;
+            } else {
+              e.href = `${item.href}`;
+            }
           }
         }
       } else if (item.type === 'div') {
@@ -36,7 +40,12 @@ function _topnav() {
         item.es.forEach(item2 => {
           let _c = document.createElement('a');
           _c.innerHTML = item2.name;
-          _c.href = `${item2.href}.html`;
+          if (window.location.hostname == '127.0.0.1') {
+            _c.href = `${item2.href}.html`;
+          } else {
+            _c.href = `${item2.href}`;
+          }
+          
           let _d = item2.href.split('/');
           let _e = _d[_d.length-1];
           dropdown_content.appendChild(_c);
