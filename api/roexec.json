@@ -45,7 +45,7 @@
     },
     {
         "name": "Wave",
-        "status": "In Development",
+        "status": "Operational",
         "desc": "Experience Wave, the best scripting tool on the big screen and harness the unparalleled power it offers. Dive into the evolution, not just as an observer, but as a participant riding the crest of innovation. With advanced scripting capabilities and superior performance, Wave invites you to immerse yourself fully and ride the wave of the future.",
         "logo": "/assets/wave.png",
         "platforms": [
@@ -55,7 +55,7 @@
         "banner": "/assets/spdmteam.gif",
         "rating": 5,
         "unc": 99,
-        "last_updated": "2024-06-04",
+        "last_updated": "2024-06-28",
         "availability": [
             "Free",
             "Premium"
